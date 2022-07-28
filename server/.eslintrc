@@ -1,0 +1,20 @@
+{
+  "extends": "eslint-config-egg/typescript",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "rules": {
+    "curly": [2, "all"],
+    "quotes": [2, "single", { "avoidEscape": true }],
+    "semi": "off",
+    "@typescript-eslint/semi": [0],
+    "array-bracket-spacing": [0],
+    "no-unused-vars": "off0",
+    "@typescript-eslint/no-unused-vars": [0]
+  }
+}
