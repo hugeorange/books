@@ -1,5 +1,9 @@
 {
   "extends": "@eggjs/tsconfig",
+  "compilerOptions": {
+    // ... other stuff
+    "useUnknownInCatchVariables": false
+  },
   "exclude": [
     "app/public",
     "app/views",
