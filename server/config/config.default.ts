@@ -47,10 +47,31 @@ export default (appInfo: EggAppInfo) => {
     agent: false,
   }
 
+  const jwt = {
+    secret: 'nickson'
+  }
+
+  const multipart = {
+    mode: 'file'
+  }
+
+  const userConfig = {
+    // myAppName: 'egg',
+    uploadDir: 'app/public/upload',
+    cors: {
+      origin: '*',
+      credentials: true, // 允许 Cookie 跨域跨域
+      allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH'
+    }
+  };
+
   // the return config will combines to EggAppConfig
   return {
     ...config,
     ...bizConfig,
+    ...userConfig,
     mysql,
+    jwt,
+    multipart
   }
 }
