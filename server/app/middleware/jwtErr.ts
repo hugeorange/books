@@ -1,4 +1,3 @@
-
 export default (secret: string) => {
 	return async function jwtErr(ctx, next) {
 		// 没有 token 返回 null

@@ -31,15 +31,19 @@ export default (appInfo: EggAppInfo) => {
     // 单数据库信息配置
     client: {
       // host
-      host: 'localhost',
+      // host: 'localhost',
+      host: '101.132.103.126',
       // 端口号
       port: '3306',
       // 用户名
-      user: 'root',
+      // user: 'root',
+      user: 'cost',
       // 密码
-      password: '326242499', // 初始化密码，没设置的可以不写
+      // password: '326242499',
+      password: 'rKdMekwCKYh5dpJk',
       // 数据库名
-      database: 'juejin-cost', // 数据库名称
+      // database: 'juejin-cost',
+      database: 'cost',
     },
     // 是否加载到 app 上，默认开启
     app: true,
