@@ -25,7 +25,6 @@ export default class UploadController extends Controller {
 			// 清除临时文件
 			this.ctx.cleanupRequestFiles()
 		}
-		console.log('uploadir--->', uploadDir)
 		this.ctx.body = {
 			code: 200,
 			msg: 'success',
