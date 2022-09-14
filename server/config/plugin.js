@@ -1,7 +1,7 @@
-import { EggPlugin } from 'egg'
+'use strict';
 
-const plugin: EggPlugin = {
-  // static: true,
+/** @type Egg.EggPlugin */
+module.exports = {
   ejs: {
     enable: true,
     package: 'egg-view-ejs',
@@ -12,12 +12,10 @@ const plugin: EggPlugin = {
   },
   jwt: {
     enable: true,
-    package: 'egg-jwt'
+    package: 'egg-jwt',
   },
   cors: {
     enable: true,
-    package: 'egg-cors'
-  }
-}
-
-export default plugin
+    package: 'egg-cors',
+  },
+};

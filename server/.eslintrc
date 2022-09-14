@@ -1,31 +1,4 @@
 {
-  "extends": "eslint-config-egg/typescript",
-  "parserOptions": {
-    "project": "./tsconfig.json"
-  },
-  "env": {
-    "browser": true,
-    "es6": true,
-    "node": true
-  },
-  "rules": {
-    "curly": [2, "all"],
-    "quotes": [2, "single", { "avoidEscape": true }],
-    "semi": "off",
-    "@typescript-eslint/semi": [0],
-    "array-bracket-spacing": [0],
-    "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": [0],
-    // note you must disable the base rule as it can report incorrect errors
-    "indent": "off",
-    "@typescript-eslint/indent": [0],
-    // or
-    "comma-dangle": [0, {
-        "arrays": "never",
-        "objects": "never",
-        "imports": "never",
-        "exports": "never",
-        "functions": "never"
-    }]
-  }
+  "extends": "eslint-config-egg",
+  "root": true
 }

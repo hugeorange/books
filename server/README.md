@@ -1,6 +1,33 @@
-## books server
-1. [安装 mysql](https://juejin.cn/book/6966551262766563328/section/6966552320490340360) 打开 mysql 数据库 
-2. 命令行开启 mysql `mysql -u root -p`
-3. 打开 `DBeaver` 
-4. 链接 mysql ， 3306 端口
-5. 启动 egg 应用
+# books
+
+
+
+## QuickStart
+
+<!-- add docs here for user -->
+
+see [egg docs][egg] for more detail.
+
+### Development
+
+```bash
+$ npm i
+$ npm run dev
+$ open http://localhost:7001/
+```
+
+### Deploy
+
+```bash
+$ npm start
+$ npm stop
+```
+
+### npm scripts
+
+- Use `npm run lint` to check code style.
+- Use `npm test` to run unit test.
+- Use `npm run autod` to auto detect dependencies upgrade, see [autod](https://www.npmjs.com/package/autod) for more detail.
+
+
+[egg]: https://eggjs.org
